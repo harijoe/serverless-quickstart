@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/register": "^7.0.0-beta.47",
+    "aws-sdk": "^2.245.1",
+    "axios": "^0.18.0",
+    "middy": "^0.13.2",
+    "serverless-dynamodb-client": "0.0.2",
+    "serverless-dynamodb-local": "^0.2.30",
+    "serverless-offline": "^3.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "serverless offline start",
+    "deploy:staging": "sls deploy -s staging",
+    "deploy:prod": "sls deploy -s prod"
+  },
+  "author": "",
+  "license": "ISC"
+}
