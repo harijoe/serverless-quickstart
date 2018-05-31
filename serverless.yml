@@ -73,6 +73,7 @@ functions:
       - http:
           path: fixtures
           method: post
+      - schedule: rate(1 hour)
   fixturesGet:
     handler: handler.fixturesGet
     events:
@@ -85,6 +86,7 @@ functions:
       - http:
           path: livescores
           method: post
+      - schedule: rate(1 minute)
   livescoresGet:
     handler: handler.livescoresGet
     events:

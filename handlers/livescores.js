@@ -6,8 +6,8 @@ import { doc as dynamoDb } from 'serverless-dynamodb-client'
 import fetchRetry from '../utils/fetchRetry'
 
 const livescoresHandler = async (event, context, callback) => {
-  // const { data: { data: { match: scores } } } = await fetchRetry(() => axios.get('scores/live.json'))
-  const { data: { data: { match: scores } } } = await fetchRetry(() => axios.get('scores/live.json', { params: { country: 85 }}))
+  const { data: { data: { match: scores } } } = await fetchRetry(() => axios.get('scores/live.json'))
+  // const { data: { data: { match: scores } } } = await fetchRetry(() => axios.get('scores/live.json', { params: { country: 85 }}))
 
   await dynamoDb.put({
     TableName : process.env.DYNAMODB_TABLE,
