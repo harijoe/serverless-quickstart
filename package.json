@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
     "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.47",
     "@babel/preset-env": "^7.0.0-beta.47",
     "@babel/register": "^7.0.0-beta.47",
+    "@harijoe/middy-json-response-middleware": "^1.0.0",
     "aws-sdk": "^2.245.1",
-    "axios": "^0.18.0",
     "middy": "^0.13.2",
     "serverless-dynamodb-client": "0.0.2",
     "serverless-dynamodb-local": "^0.2.30",
